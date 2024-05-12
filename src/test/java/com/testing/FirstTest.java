@@ -10,6 +10,7 @@ import org.junit.Assert;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.nio.file.Path;
 import java.nio.file.Files;
@@ -68,8 +69,12 @@ public class FirstTest {
         actual.add(32343);
         actual.add(-1);
         actual.add(5);
-
+        Path currentRelativePath = Paths.get("");
+        String s = currentRelativePath.toAbsolutePath().toString();
+        System.out.println("Current absolute path is: " + s);
         Assert.assertEquals(expected, actual);
+
+
 
     }
 
