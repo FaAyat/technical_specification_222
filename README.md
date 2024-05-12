@@ -1,4 +1,4 @@
-![CI](https://github.com/FaAyat/technical_specification_222/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/FaAyat/technical_specification_222/actions/workflows/main.yml/badge.svg)
 ## Опсиание
 Представленный проект умеет читать числа из файла и находить __минимальное__ число, __максимальное__ число из файла, находить __сумму__ и __произведение__ всех чисел в файле.
 
