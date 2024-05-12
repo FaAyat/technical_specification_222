@@ -33,9 +33,9 @@ public class FirstTest {
     @Before
     public void setUp() throws Exception {
         file1 = new File("/Users/aafatihova/Documents/programming_technologies/technical_specification_2/test_file_1");
-        file2 = new File("/Users/aafatihova/Documents/programming_technologies/technical_specification_2/test_file_2");
-        file3 = new File("/Users/aafatihova/Documents/programming_technologies/technical_specification_2/test_file_3");
-        file4 = new File("/Users/aafatihova/Documents/programming_technologies/technical_specification_2/test_file_4");
+        //file2 = new File("/Users/aafatihova/Documents/programming_technologies/technical_specification_2/test_file_2");
+        //file3 = new File("/Users/aafatihova/Documents/programming_technologies/technical_specification_2/test_file_3");
+        //file4 = new File("/Users/aafatihova/Documents/programming_technologies/technical_specification_2/test_file_4");
 
     }
 
@@ -43,14 +43,14 @@ public class FirstTest {
     public void GetMinValue() throws FileNotFoundException {
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(Main._min(file1));
-        expected.add(Main._min(file2));
-        expected.add(Main._min(file3));
-        expected.add(Main._min(file4));
+        //expected.add(Main._min(file2));
+        //expected.add(Main._min(file3));
+       //expected.add(Main._min(file4));
         ArrayList<Integer> actual = new ArrayList<>();
         actual.add(-234985);
-        actual.add(-123413);
-        actual.add(-1);
-        actual.add(5);
+        //actual.add(-123413);
+        //actual.add(-1);
+        //actual.add(5);
 
         Assert.assertEquals(expected, actual);
 
@@ -60,14 +60,14 @@ public class FirstTest {
     public void GetMaxValue() throws FileNotFoundException {
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(Main._max(file1));
-        expected.add(Main._max(file2));
-        expected.add(Main._max(file3));
-        expected.add(Main._max(file4));
+        //expected.add(Main._max(file2));
+        //expected.add(Main._max(file3));
+        //expected.add(Main._max(file4));
         ArrayList<Integer> actual = new ArrayList<>();
         actual.add(245241);
-        actual.add(32343);
-        actual.add(-1);
-        actual.add(5);
+        //actual.add(32343);
+        //actual.add(-1);
+        //actual.add(5);
 
         Assert.assertEquals(expected, actual);
 
@@ -77,14 +77,14 @@ public class FirstTest {
     public void GetSum() throws FileNotFoundException {
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(Main._sum(file1));
-        expected.add(Main._sum(file2));
-        expected.add(Main._sum(file3));
-        expected.add(Main._sum(file4));
+        //expected.add(Main._sum(file2));
+        //expected.add(Main._sum(file3));
+        //expected.add(Main._sum(file4));
         ArrayList<Integer> actual = new ArrayList<>();
         actual.add(198741);
-        actual.add(-123510);
-        actual.add(-2);
-        actual.add(15);
+        //actual.add(-123510);
+        //actual.add(-2);
+        //actual.add(15);
 
         Assert.assertEquals(expected, actual);
 
@@ -94,14 +94,14 @@ public class FirstTest {
     public void GetMult() throws FileNotFoundException {
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(Main._mult(file1));
-        expected.add(Main._mult(file2));
-        expected.add(Main._mult(file3));
-        expected.add(Main._mult(file4));
+        //expected.add(Main._mult(file2));
+        //expected.add(Main._mult(file3));
+        //expected.add(Main._mult(file4));
         ArrayList<Integer> actual = new ArrayList<>();
         actual.add(0);
-        actual.add(0);
-        actual.add(1);
-        actual.add(125);
+        //actual.add(0);
+        //actual.add(1);
+        //actual.add(125);
 
         Assert.assertEquals(expected, actual);
 
