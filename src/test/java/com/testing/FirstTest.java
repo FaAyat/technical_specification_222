@@ -33,10 +33,10 @@ public class FirstTest {
 
     @Before
     public void setUp() throws Exception {
-        file1 = new File("test_file_1");
-        file2 = new File("test_file_2");
-        file3 = new File("test_file_3");
-        file4 = new File("test_file_4");
+        file1 = new File("./src/test/resources/test_file_1");
+        file2 = new File("./src/test/resources/test_file_2");
+        file3 = new File("./src/test/resources/test_file_3");
+        file4 = new File("./src/test/resources/test_file_4");
 
     }
 
@@ -59,6 +59,9 @@ public class FirstTest {
 
     @Test
     public void GetMaxValue() throws FileNotFoundException {
+        Path currentRelativePath = Paths.get("");
+        String s = currentRelativePath.toAbsolutePath().toString();
+        System.out.println("Current absolute path is: " + currentRelativePath.toString());
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(Main._max(file1));
         expected.add(Main._max(file2));
@@ -69,9 +72,7 @@ public class FirstTest {
         actual.add(32343);
         actual.add(-1);
         actual.add(5);
-        Path currentRelativePath = Paths.get("");
-        String s = currentRelativePath.toAbsolutePath().toString();
-        System.out.println("Current absolute path is: " + s);
+
         Assert.assertEquals(expected, actual);
 
 
