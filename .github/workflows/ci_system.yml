@@ -19,3 +19,9 @@ jobs:
       run: mvn clean install
     - name: Test with Maven
       run: mvn test
+    - name: telegram notification
+      uses: "appleboy/telegram-action@master"
+      with:
+        to: ${{ secrtes.telegram_chat_id }}
+        token: ${{ secrets.telegram_token}}
+        args: New commit
